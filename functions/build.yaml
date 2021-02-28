@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      firebase_node|nodejs_builder:
+        enabled: true
+        options:
+          # node_modules is optional to require any node modules
+          node_modules:
+            # This wil output
+            # 'const someModule = require("module-name")'
+            # 'self.someModule = someModule'
+            # So if you have custom js interop you can use node module @JS('someModule')
+            someModule: module-name
+          dart2js_args:
+            - -O1

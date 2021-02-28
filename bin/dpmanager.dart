@@ -3,6 +3,9 @@ import 'package:args/args.dart';
 ArgResults argResults;
 
 void main(List<String> args) {
+  mainSys(args);
+}
+void mainSys(List<String> args) {
   ArgParser parserB = ArgParser(allowTrailingOptions: true);
   final List<ConsoleCmd> cmds = makeCmds();
   final Argperser parser = addArgCmd(cmds, parser);

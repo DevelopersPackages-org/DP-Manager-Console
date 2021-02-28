@@ -1,0 +1,5 @@
+{
+  "functions": {
+    "ignore": ["node_modules", ".dart_tool", "packages"]
+  }
+}
